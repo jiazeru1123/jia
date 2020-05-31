@@ -1,0 +1,77 @@
+
+#include <stdio.h>
+
+int main(void)
+{
+    int a, b, c;
+
+    printf("请输入3个整数\n");
+    scanf("%d,%d,%d",&a,&b,&c);
+
+    if(a+b>c && a-b<c)
+    {  printf("以%d,%d,%d为三条边能够组成三角形",a,b,c);}
+
+    else
+    {printf("以%d,%d,%d为三条边不能组成三角形",a,b,c);}
+
+    return 0;
+}
+
+
+
+
+#include <stdio.h>
+
+int main(void)
+{ int i,sum=0;
+int a=1,n;
+    printf("请输入数据个数:");
+    scanf("%d",&i);
+   
+ for(a=1;a<=i;a++)
+ {printf("输入第%d个数\n",a);
+  scanf("%d",&n);
+     if(n<0)
+     {printf("");}
+     else
+     { sum=sum+n;   }}
+
+ printf("5个数中正数的和为:%d\n",sum);
+}
+
+
+
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+int main(void)
+{int a,b,d;
+char c;
+    srand(time(0));
+    a= rand();
+printf("整数运算器 (+、-、*)\n");
+printf("====================\n");
+printf("       +:加法\n");
+printf("       -:减法\n");
+printf("       *:乘法\n");
+printf("====================\n");
+
+for(a=rand();a>0;a--)
+{printf("您还可以正确计算%d次\n",a);
+ printf("请输入表达式:\n");
+scanf("%d%c%d",&b,&c,&d);
+   if(c=='+')
+       printf("和为%d",b+d);
+   else if (c=='-')
+       printf("差为%d",b-d);
+   else if (c == '*')
+       printf("积为%d",b*d);
+  
+   else
+       printf("本次输入有误");}
+}
+
+
+
+
